@@ -1,5 +1,6 @@
 :root{
-
+    --backg-: #81b2a9; 
+    --font-: black; 
 }
 
 *{
@@ -11,4 +12,19 @@
 html{
     font-size: 62.5%; 
 }
+
+body{
+    width: 100vw;
+    height: 100vh; /*Por ahora*/
+}
+
+.mainContent{
+    width: 100%; 
+    height: 100%;
+    /*Corregir los colores para que tomen el 100% de la web*/
+    background: linear-gradient(); 
+    background: var(--backg-);
+    color: var(--font-);
+}
+
 
