@@ -26,10 +26,10 @@ body{
 }
 
 .mainContent{
-    width: 100%; 
-    height: 100%;
+    width: 100vw; 
+    height: 100vh;
     /*Corregir los colores para que tomen el 100% de la web*/
-    background: linear-gradient(); 
+    /* background: linear-gradient();  */
     background: var(--back-);
     color: var(--font-);
 }
@@ -41,8 +41,7 @@ body{
     background: var(--back-); 
     display: flex; 
 }
-#header-mobile{
-    padding-left: 7%; 
+#header-mobile{ 
     width: 100%; 
     height: 100%;
     display: flex;
@@ -52,46 +51,56 @@ body{
     flex-wrap: wrap;
 }
 .headerMobile-logo{
-    width: 15%; 
-    max-width: 50px; 
-
+    width: 17%; 
     height: 100%;
+    
     display: flex;
     justify-content: center; 
     align-items: center;
+
+    padding-left: 5%; 
 }
-.headerMobile-logo #Mobile-logo{
+#Mobile-logo{
     width: 100%;
+    max-width: 45px; 
+    min-width: 40px; 
     height: 100%;
 }
 .headerMobile-title{
-    padding-left: 7%; 
     display: flex; 
     justify-content: flex-start;
     align-items: center;
-    min-width: 70%;
+
+    width: 65%; 
+    min-width: 150px;
     height: 100%;
+
+    padding-left: 5%; 
 }
 .headerMobile-title #title{
+    width: 100%;
     color: var(--mainTitleColor-);
     font-family: var(--font-family-main); 
     font-size: 1.5rem;
     font-weight: 600;
 }
 .headerMobile-menu{
-    min-width: 15%;
+    min-width: 18%;
     height: 100%;
     display: flex; 
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .headerMobile-menu #menuIcon{
-    max-width: 60%; 
-    height: 20%;
+    display:flex; 
+    padding-right: 10%;
+    width: 45%; 
+    height: auto;
 }
 .headerMobile-menu #nav{
     display:none; 
 }
+
 /* -------------------------------- */
 
 
