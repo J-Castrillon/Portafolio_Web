@@ -94,8 +94,10 @@ body{
 .headerMobile-menu #menuIcon{
     display:flex; 
     padding-right: 10%;
-    width: 45%; 
-    height: auto;
+    width: 40%;
+    max-width: 40px; 
+    min-width: 35px;
+    height: 30%;
 }
 .headerMobile-menu #nav{
     display:none; 
