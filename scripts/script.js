@@ -8,8 +8,14 @@ window.addEventListener('load',()=>{
     const menuMobileIcon = document.querySelector('#menuIcon'); 
     const menuMobile = document.querySelector('#menu-mobile'); 
     const main = document.querySelector('#Main'); 
+    const lastName = document.querySelector('#second-lastName');
+    let timer;
 
     // Instrucciones; 
+    timer = setInterval(()=>{
+        window.innerWidth >= 600 ? lastName.classList.remove('inactive') : lastName.classList.add('inactive'); 
+    },100); 
+
     // Redes sociales - versión mobile; 
     netsInstagram.setAttribute('href','https://www.instagram.com/juliancastrillon17/');
     netsLinkedin.setAttribute('href','https://github.com/J-Castrillon?tab=repositories'); 
@@ -20,4 +26,6 @@ window.addEventListener('load',()=>{
         menuMobile.classList.toggle('inactive'); 
         main.classList.contains('inactive') ? main.classList.remove('inactive') : main.classList.add('inactive'); 
     })
+
+    
 }); 

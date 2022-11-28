@@ -28,8 +28,8 @@ body{
     /* Fondo */
     background-image: var(--back-); 
     min-height: 100%;
-    background-repeat: repeat-x; 
-    background-size: contain;
+    background-repeat: no-repeat; 
+    background-size: cover;
     background-position: absolute;
     background-attachment: fixed; 
 }
