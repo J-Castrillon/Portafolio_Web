@@ -236,30 +236,27 @@ body::before{
     width: 100%; 
     height: 70%;
     
-    display: flex;
+    display: block;
     justify-content: flex-start;
     align-items: center;
 }
 .nets-aside{
     background: transparent; 
 
-    width: 15%; 
-    height: auto;
-    padding-left: 5%;
+    width: 100%; 
+    height: 20%;
 
     display: flex; 
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-
-    padding-bottom: 20%; 
 }
 .nets-icons{
     width: 100%; 
-    height: auto;
+    height: 100%;
 
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     justify-content: center;
     align-items: center; 
 }
@@ -273,12 +270,9 @@ body::before{
     border: 1px solid transparent;  
     background: transparent; 
 
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-top: 20%;
-    padding-top: 4%; 
 }
 #netsAside img{
     width:100%;
@@ -288,8 +282,8 @@ body::before{
 
 /* Corregir según position absolute */
 .image{
-    width: 85%; /* El resto lo tiene el aside para las redes sociales */
-    height: 100%;
+    width: 100%; /* El resto lo tiene el aside para las redes sociales */
+    height: 80%;
     display: flex; 
 }
 .image-absolute{
