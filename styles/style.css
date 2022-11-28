@@ -1,5 +1,5 @@
 :root{
-    --back-: #0a0a0a; 
+    --back-: url('../resources/wallpaper(2).jpg'); 
     --font-: black; 
     --mainTitleColor-: white; 
     --font-family-main: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;  
@@ -24,6 +24,27 @@ body{
     height: 100%;
     display: flex; 
     flex-direction: column; 
+
+    /* Fondo */
+    background-image: var(--back-); 
+    min-height: 100%;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: absolute;
+    background-attachment: fixed; 
+}
+/* Necesario para el fondo */
+body::before{
+    content: ""; 
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(#111111,#111111);
+    opacity: 0.6;
+    z-index: -1;
 }
 
 /* Para inactivar algunos contenedores */
@@ -36,7 +57,7 @@ body{
     width: 100%; 
     height: 100%;
    
-    background: var(--back-);
+    /* background: var(--back-); */
     color: var(--font-);
 }
 
@@ -44,7 +65,7 @@ body{
 #header{
     width: 100%; 
     height: 12%;
-    background: var(--back-); 
+    background: transparent; 
     display: flex; 
 }
 #header-mobile{ 
@@ -126,7 +147,7 @@ body{
     height: 88%;
 
     position: absolute; 
-    background: var(--back-);
+    background: transparent;
     /* color: white; */
 
     display: flex;
@@ -175,9 +196,9 @@ body{
 }
 #Introduction{
     width: 100%; 
-    height: 20%;
+    height: 30%;
     display: block;
-    padding: 5% 0;
+    padding-top: 10%;
 }
 .introductionContent{
     width: 100%; 
@@ -213,14 +234,14 @@ body{
 /* Redes sociales - perfiles */
 #Nets{
     width: 100%; 
-    height: 80%;
+    height: 70%;
     
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 .nets-aside{
-    background: var(--back-); 
+    background: transparent; 
 
     width: 15%; 
     height: auto;
@@ -249,8 +270,8 @@ body{
     max-width: 40px;
     
     border-radius: 99%; 
-    border: 1px solid white;  
-    background: white; 
+    border: 1px solid transparent;  
+    background: transparent; 
 
     display:flex;
     justify-content: center;
@@ -290,14 +311,5 @@ body{
     /* Se debe modificar el tamaño mínimo
         y máximo para la imágen original */
 }
-
-/* Tareas: 
-    3. Corregir la versión desktop del home;
-    4. Cambiar el fondo, colocarle una imagen; 
-*/
-
-
-
-/* -------------------------------- */
 
 
