@@ -2,14 +2,22 @@
 
 window.addEventListener('load',()=>{
     // Declaración e inicialización de variables ; 
-    const nets_instagram = document.querySelector('#nets-instragram'); 
-    const nets_linkedin = document.querySelector('#nets-linkedin'); 
-    const nets_github = document.querySelector('#nets-github'); 
-    
+    const netsInstagram = document.querySelector('#nets-instragram'); 
+    const netsLinkedin = document.querySelector('#nets-linkedin'); 
+    const netsGithub = document.querySelector('#nets-github');
+    const menuMobileIcon = document.querySelector('#menuIcon'); 
+    const menuMobile = document.querySelector('#menu-mobile'); 
+    const main = document.querySelector('#Main'); 
 
     // Instrucciones; 
     // Redes sociales - versión mobile; 
-    nets_instagram.setAttribute('href','https://www.instagram.com/juliancastrillon17/');
-    nets_github.setAttribute('href','https://github.com/J-Castrillon?tab=repositories'); 
-    nets_linkedin.setAttribute('href','https://www.linkedin.com/in/juli%C3%A1n-castrill%C3%B3n-364056168/'); 
+    netsInstagram.setAttribute('href','https://www.instagram.com/juliancastrillon17/');
+    netsLinkedin.setAttribute('href','https://github.com/J-Castrillon?tab=repositories'); 
+    netsGithub.setAttribute('href','https://www.linkedin.com/in/juli%C3%A1n-castrill%C3%B3n-364056168/'); 
+
+    // Abrir el menú mobile;
+    menuMobileIcon.addEventListener('click',()=>{
+        menuMobile.classList.toggle('inactive'); 
+        main.classList.contains('inactive') ? main.classList.remove('inactive') : main.classList.add('inactive'); 
+    })
 }); 

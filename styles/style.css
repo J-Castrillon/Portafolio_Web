@@ -3,6 +3,8 @@
     --font-: black; 
     --mainTitleColor-: white; 
     --font-family-main: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;  
+    --font-size-h3: 2.5rem; 
+    --font-size-p: 1.5rem; 
 }
 
 *{
@@ -26,7 +28,8 @@ body{
 
 /* Para inactivar algunos contenedores */
 .inactive{
-    display: none; 
+    display: none;
+    visibility: hidden; 
 }
 
 .mainContent{
@@ -94,16 +97,72 @@ body{
     justify-content: flex-end;
     align-items: center;
 }
-.headerMobile-menu #menuIcon{
+.headerMobile-menu-img{
+    width: 100%; 
+    height: 100%;
+
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+
+    padding-right: 15%; 
+}
+.headerMobile-menu-img #menuIcon{
     display:flex; 
     padding-right: 10%;
     width: 40%;
     max-width: 40px; 
     min-width: 35px;
     height: 30%;
+    cursor: pointer; 
 }
 .headerMobile-menu #nav{
     display:none; 
+}
+
+/* Menu-mobile */
+#menu-mobile{
+    width: 100%; 
+    height: 88%;
+
+    position: absolute; 
+    background: var(--back-);
+    /* color: white; */
+
+    display: flex;
+    top: 12%;
+}
+.menu-mobile-content{
+    width: 100%; 
+    height: 100%;
+
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+}
+.menu-mobile-content article{
+    width: 100%; 
+    height: 29.33%;
+
+    color: var(--mainTitleColor-);
+    cursor: pointer; 
+    
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.menu-mobile-content article h3{
+    font-size: var(--font-size-h3); 
+    font-family: var(--font-family-main); 
+}
+.menu-mobile-content article p{
+    color: rgba(255, 255, 255, 0.644); 
+    font-size: var(--font-size-p); 
+    font-family: var(--font-family-main); 
+    padding-top: 3%; 
 }
 
 /* Main */
@@ -111,7 +170,8 @@ body{
     width: 100%; 
     height: 88%;
     display: flex;
-    flex-direction: column;  
+    flex-direction: column; 
+    flex-wrap: wrap; 
 }
 #Introduction{
     width: 100%; 
@@ -173,49 +233,71 @@ body{
 
     padding-bottom: 20%; 
 }
-#netsAside div{
-    
+.nets-icons{
+    width: 100%; 
+    height: auto;
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+.nets-icons div{
     width: 100%;
     height: 100%;
+    min-width: 30px;
+    max-width: 40px;
     
     border-radius: 99%; 
     border: 1px solid white;  
-    background: white;
+    background: white; 
 
     display:flex;
     justify-content: center;
     align-items: center;
 
+    margin-top: 20%;
+    padding-top: 4%; 
 }
 #netsAside img{
     width:100%;
-    height: auto;
+    height: 100%;
     border-radius: 999px; 
 }
 
 /* Corregir según position absolute */
 .image{
-    width: 85%; 
-    height: 50vh;
+    width: 85%; /* El resto lo tiene el aside para las redes sociales */
+    height: 100%;
     display: flex; 
 }
 .image-absolute{
-    width: 80%; 
-    height: 50%;
-    position: absolute; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-.image-relative{
     width: 100%; 
     height: 100%;
+    /* position: absolute;  */
     display: flex; 
     justify-content: center;
     align-items: center;
-    position:relative; 
 }
+.personal-Image{
+    width: 100%; 
+    height: 100%; 
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    /* Se debe modificar el tamaño mínimo
+        y máximo para la imágen original */
+}
+
+/* Tareas: 
+    3. Corregir la versión desktop del home;
+    4. Cambiar el fondo, colocarle una imagen; 
+*/
+
+
+
 /* -------------------------------- */
 
 
