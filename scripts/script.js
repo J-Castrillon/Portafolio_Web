@@ -18,8 +18,8 @@ window.addEventListener('load',()=>{
 
     // Redes sociales - versión mobile; 
     netsInstagram.setAttribute('href','https://www.instagram.com/juliancastrillon17/');
-    netsLinkedin.setAttribute('href','https://github.com/J-Castrillon?tab=repositories'); 
-    netsGithub.setAttribute('href','https://www.linkedin.com/in/juli%C3%A1n-castrill%C3%B3n-364056168/'); 
+    netsLinkedin.setAttribute('href','https://www.linkedin.com/in/juli%C3%A1n-castrill%C3%B3n-364056168/');
+    netsGithub.setAttribute('href','https://github.com/J-Castrillon?tab=repositories'); 
 
     // Abrir el menú mobile;
     menuMobileIcon.addEventListener('click',()=>{
